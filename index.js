@@ -14,7 +14,7 @@ var DEBUG=true;
         JSON = window["JSON"];
 (function(factory) {
     // Support three module loading scenarios
-    if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
+    if (typeof require === 'function' && (typeof exports === 'object' || typeof exports === 'function') && (typeof module === 'object' || typeof module === 'function')) {
         // [1] CommonJS/Node.js
         var target = module['exports'] || exports; // module.exports is for Node.js
         factory(target);
