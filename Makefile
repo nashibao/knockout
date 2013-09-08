@@ -1,10 +1,12 @@
 
 build: components index.js
-	coffee -c tests/test.coffee
 	@component build --dev
 
 install: components build/build.min.js
 	 component build --standalone knockout --out . --name knockout
+
+min: components index.js
+	uglifyjs -o knockout.min.js knockout.js
 
 components: component.json
 	@component install --dev
