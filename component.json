@@ -1,0 +1,15 @@
+{
+  "name": "knockout",
+  "repo": "nashibao/knockout",
+  "description": "knockout.js for component.io",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
